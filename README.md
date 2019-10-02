@@ -19,7 +19,7 @@ Example Playbook
       become: yes
 	  vars:
 	    lockfile: "/var/lock/db-update-index.lock"
-		logfile: "/var/log/db-update-index.log"
+        logfile: "/var/log/db-update-index.log"
       roles:
         - role: freehck.script_with_locks
         - role: freehck.crontask
