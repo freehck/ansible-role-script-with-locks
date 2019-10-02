@@ -11,6 +11,8 @@ Role Variables
 
 `with_locks_script_name`: script name, default "with-locks"
 
+`with_locks_install_deps`: install dependencies (moreutils), default "yes"
+
 Example Playbook
 ----------------
 

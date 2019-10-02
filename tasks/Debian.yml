@@ -1,0 +1,7 @@
+---
+
+- name: install script dependencies
+  apt:
+    name: moreutils
+    state: present
+    cache_valid_time: 3600

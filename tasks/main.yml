@@ -1,5 +1,14 @@
 ---
 
+- name: distribution specific actions
+  include_tasks: "{{ item }}"
+  with_first_found:
+    - files:
+        - "{{ ansible_distribution }}.yml"
+        - "{{ ansible_os_family }}.yml"
+      skip: true
+  when: with_locks_install_deps
+
 - name: create script directory {{ with_locks_script_dir }}
   file:
     path: "{{ with_locks_script_dir }}"
