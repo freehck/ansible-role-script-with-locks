@@ -1,4 +1,4 @@
-freehck.with-locks
+freehck.script-with-locks
 =========
 
 This role copies the script that run any command with specified lock.
@@ -21,7 +21,7 @@ Example Playbook
 	    lockfile: "/var/lock/db-update-index.lock"
 		logfile: "/var/log/db-update-index.log"
       roles:
-        - role: freehck.with-locks
+        - role: freehck.script-with-locks
 		- role: freehck.crontask
 		  crontask_file: "database"
 		  crontask_name: "update index"
