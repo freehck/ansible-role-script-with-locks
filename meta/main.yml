@@ -1,6 +1,7 @@
 galaxy_info:
   author: Dmitrii Kashin
   description: create a script that allows to run commands with locks
+  role_name: script-with-locks
   license: MIT
   min_ansible_version: 2.0
   platforms:
