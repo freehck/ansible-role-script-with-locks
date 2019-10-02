@@ -1,0 +1,5 @@
+---
+
+with_locks_script_dir: "/opt/scripts"
+with_locks_script_name: "with-locks"
+with_locks_script: "{{ with_locks_script_dir }}/{{ with_locks_script_name }}"

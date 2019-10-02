@@ -1,0 +1,13 @@
+---
+
+- name: create script directory {{ with_locks_script_dir }}
+  file:
+    path: "{{ with_locks_script_dir }}"
+    state: directory
+    recurse: yes
+
+- name: copy script {{ with_locks_script_name }}
+  copy:
+    src: "with-locks.sh"
+    dest: "{{ with_locks_script }}"
+    mode: '0755'

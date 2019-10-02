@@ -1,0 +1,16 @@
+galaxy_info:
+  author: Dmitrii Kashin
+  description: create a script that allows to run commands with locks
+  license: MIT
+  min_ansible_version: 2.0
+  platforms:
+    - name: Ubuntu
+      versions:
+        - all
+    - name: Debian
+      versions:
+        - all
+
+  galaxy_tags: [ shell, script, lock, locks, cron, job ]
+
+dependencies: []
