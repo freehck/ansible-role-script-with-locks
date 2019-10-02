@@ -23,13 +23,13 @@ Example Playbook
       roles:
         - role: freehck.script_with_locks
         - role: freehck.crontask
-        crontask_file: "database"
-        crontask_name: "update index"
-        crontask_minute: "*/30"
-        crontask_user: "root"
-        crontask_job: "/opt/scripts/with-locks --timestamp --pid --highlight-errors --silent --lock {{ lockfile }} --log {{ logfile }} -- /opt/scripts/perform_update_index.sh"
-        # or the same without long options:
-        # crontask_job: "/opt/scripts/with-locks -tpes -l {{ lockfile }} -j {{ logfile }} -- /opt/scripts/perform_update_index.sh"
+          crontask_file: "database"
+          crontask_name: "update index"
+          crontask_minute: "*/30"
+          crontask_user: "root"
+          crontask_job: "/opt/scripts/with-locks --timestamp --pid --highlight-errors --silent --lock {{ lockfile }} --log {{ logfile }} -- /opt/scripts/perform_update_index.sh"
+          # or the same without long options:
+          # crontask_job: "/opt/scripts/with-locks -tpes -l {{ lockfile }} -j {{ logfile }} -- /opt/scripts/perform_update_index.sh"
 
 License
 -------
